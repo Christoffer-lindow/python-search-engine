@@ -52,11 +52,6 @@ const Navbar = (props) => {
         alignItems="center"
         flexGrow={1}
       >
-        <MenuItems>
-          <Link as={RouterLink} to="/search">
-            Search
-          </Link>
-        </MenuItems>
         <Link as={RouterLink} to="/about">
           <MenuItems>About</MenuItems>
         </Link>

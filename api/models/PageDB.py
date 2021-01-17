@@ -62,7 +62,6 @@ class PageDb:
                 score = 1.0 * freq_score + 0.8 * loc_score
                 results.append(ScoreEntry(freq_score,loc_score,score,self.pages[i].url))
 
-
         return sorted(results, key=lambda s: s.page_score, reverse=True)
 
     def load_db(self, url):

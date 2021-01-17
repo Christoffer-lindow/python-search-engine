@@ -14,4 +14,4 @@ db = PageDb(BASE_URL)
 @app.get("/query/{query_string}")
 def handle_query(query_string):
     result = db.query(query_string)
-    return(result)
+    return(result[:5])
